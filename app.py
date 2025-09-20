@@ -34,7 +34,6 @@ cities = [
     "Australia/Sydney",
     "Europe/Berlin",
     "Europe/Rome",
-    "Europe/Milan",
     "Europe/Warsaw",
     "Europe/Lisbon",
     "Europe/Madrid",
@@ -42,6 +41,12 @@ cities = [
     "Europe/Oslo",
     "Europe/Helsinki",
     "Europe/Copenhagen",
+    "Asia/Jakarta",
+    "Asia/Kolkata",
+    "Asia/Kathmandu",
+    "Asia/Dhaka",
+    "South America/Sao_Paulo",
+    "South America/Buenos_Aires",
 ]
 
 table = Table(title=" 🌎World Clock", style="cyan", show_header=True, header_style="bold magenta", expand=True)
