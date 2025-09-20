@@ -45,7 +45,6 @@ cities = [
     "Asia/Kolkata",
     "Asia/Kathmandu",
     "Asia/Dhaka",
-    "South America/Sao_Paulo",
     "South America/Buenos_Aires",
 ]
 
