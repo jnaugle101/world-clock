@@ -15,7 +15,6 @@ st.caption("App loaded ✅")
 
 cities = [
     "America/New_York",
-    "America/Lynchburg",
     "America/Chicago",
     "America/Detroit",
     "America/Phoenix",
