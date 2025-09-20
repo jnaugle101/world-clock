@@ -15,6 +15,16 @@ st.caption("App loaded ✅")
 
 cities = [
     "America/New_York",
+    "America/Lynchburg",
+    "America/Chicago",
+    "America/Detroit",
+    "America/Phoenix",
+    "America/Los_Angeles",
+    "America/Anchorage",
+    "America/Denver",
+    "America/Boise",
+    "America/Phoenix",
+    "America/Los_Angeles",
     "Europe/London",
     "Europe/Paris",
     "Asia/Tokyo",
@@ -23,6 +33,16 @@ cities = [
     "Asia/Seoul",
     "Asia/Singapore",
     "Australia/Sydney",
+    "Europe/Berlin",
+    "Europe/Rome",
+    "Europe/Milan",
+    "Europe/Warsaw",
+    "Europe/Lisbon",
+    "Europe/Madrid",
+    "Europe/Stockholm",
+    "Europe/Oslo",
+    "Europe/Helsinki",
+    "Europe/Copenhagen",
 ]
 
 table = Table(title=" 🌎World Clock", style="cyan", show_header=True, header_style="bold magenta", expand=True)
