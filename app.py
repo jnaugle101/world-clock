@@ -45,7 +45,6 @@ cities = [
     "Asia/Kolkata",
     "Asia/Kathmandu",
     "Asia/Dhaka",
-    "South America/Buenos_Aires",
 ]
 
 table = Table(title=" 🌎World Clock", style="cyan", show_header=True, header_style="bold magenta", expand=True)
