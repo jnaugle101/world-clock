@@ -8,7 +8,7 @@ from rich.table import Table
 
 console = Console(record=True)
 
-st.set_page_config(page_title="World Clock", page_icon="🌎", layout="centered")
+st.set_page_config(page_title="World Clock", page_icon="🌎", layout="wide")
 st.title("🌎 World Clock")
 st.caption("App loaded ✅")
 
@@ -41,4 +41,4 @@ except Exception as e:
 
 console.print(table)                               # render to console buffer
 html = console.export_html(inline_styles=True)     # export styled HTML
-st.components.v1.html(html, height=520, scrolling=True)  # ✅ show in Streamlit
+st.components.v1.html(html, height=600, width=1000, scrolling=True)  # table size in Streamlit
