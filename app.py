@@ -25,7 +25,7 @@ cities = [
     "Australia/Sydney",
 ]
 
-table = Table(title=" 🌎World Clock", style="cyan", show_header=True, header_style="bold magenta")
+table = Table(title=" 🌎World Clock", style="cyan", show_header=True, header_style="bold magenta", expand=True)
 table.add_column("City_Name", style="cyan", no_wrap=True)
 table.add_column("Current Time", justify="right", style="magenta")
 
