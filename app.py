@@ -3,8 +3,10 @@
 import streamlit as st
 from datetime import datetime
 import pytz
-#from rich.console import Console
+from rich.console import Console
 from rich.table import Table
+
+console = Console(record=True)
 
 st.set_page_config(page_title="World Clock", page_icon="🌎", layout="centered")
 st.title("🌎 World Clock")
@@ -29,14 +31,14 @@ table.add_column("Current Time", justify="right", style="magenta")
 
 try:
     for c in cities:
-     tz = pytz.timezone(c)
-     city_name = c.split("/")[-1].replace("_", " ")
-     dt = datetime.now(tz)
-     current_time = dt.strftime("%H:%M:%S")
-     table.add_row(city_name, current_time)
-
-
-    st.write(table)
-
+        tz = pytz.timezone(c)
+        city_name = c.split("/")[-1].replace("_", " ")
+        dt = datetime.now(tz)
+        current_time = dt.strftime("%H:%M:%S")
+        table.add_row(city_name, current_time)
 except Exception as e:
     st.error(f"Error building table: {e}")
+
+console.print(table)                               # render to console buffer
+html = console.export_html(inline_styles=True)     # export styled HTML
+st.components.v1.html(html, height=520, scrolling=True)  # ✅ show in Streamlit
